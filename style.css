@@ -563,7 +563,7 @@ h1{
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(11vh);}
+    100% {transform: translateY(10vh);}
 }
 
 @keyframes charging-computer{
