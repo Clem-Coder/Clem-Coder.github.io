@@ -8,6 +8,10 @@ h1{
 .loading-picture
 {
     position: relative;
+    animation-name: charging-computer;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .loading-picture img{
@@ -118,9 +122,6 @@ h1{
 
 
 
-
-
-
 .parcours h1 {
 
     text-decoration: underline;
@@ -129,25 +130,25 @@ h1{
     color: white;
 }
 
-
 .commercial-dev{
+    max-width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(images/malette.png);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .commercial-dev img{
+    max-width: 100%;
     animation-name: fondu-in-out;
 	animation-timing-function: ease;
 	animation-iteration-count: infinite;
 	animation-duration: 8s;
 	animation-direction: alternate;
 }
-
-
 
 
 
@@ -562,7 +563,7 @@ h1{
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(7vh);}
+    100% {transform: translateY(10vh);}
 }
 
 @keyframes charging-computer{
@@ -604,24 +605,75 @@ h1{
 
 /******* RESPONSIVE *******/
 
-@media screen and (max-width: 450px) {
-    .loading-picture
-    {
-        position: relative;
-        animation-name: charging-tel;
-        animation-duration: 3.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+
+@media screen and (max-width: 480px) {
+
+    html{
+
     }
+
+    .loading-picture{
+    position: relative;
+    animation-name: charging-tel;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }   
+
+    .loading-picture img{
+        max-width: 40%;
+    }
+
+    header img{
+        max-width: 40%;
+    }
+
+
+
+
+    .parcours{
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size: 1.5em;
+        color:white;
+    }
+
+
+
+    .parcours1 p,.parcours2 p,.parcours3 p{
+        max-width: 90%; 
+    }
+    
 }
 
-@media screen and (max-width: 1800px) {
-    .loading-picture
-    {
-        position: relative;
-        animation-name: charging-computer;
-        animation-duration: 3.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+@media (min-width: 858px) {
+    html {
+        font-size: 12px;
+    }
+}
+ 
+@media (min-width: 780px) {
+    html {
+        font-size: 11px;
+    }
+}
+ 
+@media (min-width: 702px) {
+    html {
+        font-size: 10px;
+    }
+}
+ 
+@media (min-width: 624px) {
+    html {
+        font-size: 9px;
+    }
+}
+ 
+@media (max-width: 623px) {
+    html {
+        font-size: 8px;
     }
 }
