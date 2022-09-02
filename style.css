@@ -563,13 +563,13 @@ h1{
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(30vh);}
+    100% {transform: translateY(12vh);}
 }
 
 @keyframes charging-computer{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(10vh);}
+    100% {transform: translateY(16vh);}
 }
 
 @keyframes contents{
