@@ -563,7 +563,7 @@ h1{
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(10vh);}
+    100% {transform: translateY(11vh);}
 }
 
 @keyframes charging-computer{
@@ -608,9 +608,6 @@ h1{
 
 @media screen and (max-width: 480px) {
 
-    html{
-
-    }
 
     .loading-picture{
     position: relative;
@@ -627,9 +624,6 @@ h1{
     header img{
         max-width: 40%;
     }
-
-
-
 
     .parcours{
         width: 90%;
