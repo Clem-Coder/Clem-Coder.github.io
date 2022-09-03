@@ -626,6 +626,10 @@ header h2{
         transition-duration: 400ms;
     }
 
+    .menu-block:hover{
+        transform: scale(1);
+    }
+
     /*PARCOURS*/
 
 
@@ -723,8 +727,25 @@ header h2{
         padding: 3% 3% 3% 0%;
     }
 
+    .techno-back{
+        margin-bottom: 0.5%;
+        background-color: rgb(88, 188, 255);
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .techno-front{
+        background-color: rgb(111, 211, 166);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
     .techno-backend img ,.techno-frontend img{
         width: 30%;
+    }
+
+    .techno-div{
+        align-items: center;
     }
 
 
