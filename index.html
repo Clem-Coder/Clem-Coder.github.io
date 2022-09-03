@@ -14,35 +14,50 @@
         </div>     
         <div class="content">
             <section class="section1">
-                <header class="menu">
+                <header>
                     <img src="images/clemcode.png">
                     <h1>Clem-Coder </h1>
                     <div class="menu">
-                        <a>Mon parcours</a>
-                        <a>Projets</a>
-                        <a>Technos</a>
-                        <a>Contact</a>
+                        <a class="menu-block" href="#parcours">
+                            <h2>Mon parcours</h2>
+                            <img src="images/parcours.png">
+                        </a>
+                        <a class="menu-block" href="#projets">
+                            <h2>Mes projets</h2>
+                            <img src="images/projets.png">
+                        </a>
+                        <a class="menu-block" href="#technos">
+                            <h2>Mes technos</h2>
+                            <img src="images/techno.png">
+                        </da>
+                        <a class="menu-block" href="#technos">
+                            <h2>Contact</h2>
+                            <img src="images/contact.png">
+                        </a>
                     </div>
                 </header> 
-                <div>
-                    <div class="parcours">
-                        <h1>Mon parcours</h1>
-                        <div class="parcours1">
+                <div class="parcours">
+                    <h1 id="parcours">Mon parcours</h1>
+                        <div class="etape1">
                             <p>Après 5 années passées dans la vente, j'ai décidé de me reconvertir dans le milieu du dev, métier pour lequel je me suis pris de passion.</p>
                             <div class="commercial-dev">
                                 <img src="images/ordi.png">
                             </div>
                         </div>
-                        <div class="parcours2">
-                            <img src="images/c.png">
+                        <div class="etape2">
+                            <div class="etape2-img">
+                                <img src="images/c.png">
+                            </div>
                             <p>J'ai commencé mon apprentissage en autodidacte avec du C, un langage procédural de bas niveau pour comprendre les principes fondamentaux du code. </p>  
                         </div>
-                        <div class="parcours3">
+                        <br>
+                        <br>
+                        <div class="etape3">
                             <p>
-                                Puis j'ai suivi une formation backend sur OpenClassRooms, spécialisée pour le langage Java. J'ai choisi de m'orienté 
+                                Puis j'ai suivi une formation backend sur OpenClassRooms, spécialisée pour le langage Java. J'ai choisi de m'orienter 
                                 vers ce langage car j'aime beaucoup les avantages de la machine virtuelle ainsi que ceux de la programmation orientée objet.
                             </p>
-                            <div class="parcours3-img">
+                            <div class="etape3-img">
                                 <div>
                                     <img src="images/ocr.png">
                                 </div>
@@ -51,12 +66,11 @@
                                 </div>
                             </div>
                         </div> 
-                    </div>
                 </div>
             </section>
             <section class="section2">
                 <div class="projets" >
-                    <h1>Mes projets</h1>
+                    <h1 id="projets">Mes projets</h1>
                     <p>Dans le cadre de ma formation, j'ai réalisé différents projets professionnalisants plus intéressants les uns que les autres, parmi eux :  </p>
                     <div class="container reveal">
                         <h2>Application de transfert d'argent</h2>
@@ -71,7 +85,7 @@
                </div>
                <div class="specifications">
                 <div class="spe-titre">
-                    <h1>Spécifications techniques</h1> 
+                    <h2>Spécifications techniques</h2> 
                     <img src="images/engrenage.png">
                 </div>
                 <div class="spe-parties">
@@ -79,15 +93,15 @@
                         <h2>Backend</h2>
                         <div class="backend">
                             <div >
-                                <h3>Langage</h3>
+                                <p>Langage</p>
                                 <img src="images/logos/java.png" >
                             </div>
                             <div >
-                                <h3>Base de données</h3>
+                                <p>Base de données<p>
                                 <img src="images/logos/mysql.png" >
                             </div>
                             <div >
-                                <h3>Framework</h3>
+                                <p>Framework</p>
                                 <img src="images/logos/spring.png" >
                             </div>
                         </div>
@@ -96,15 +110,21 @@
                         <h2>Frontend</h2>
                         <div class="frontend">
                             <div >
-                                <h3>Langages</h3>
+                                <p>Langages</p>
                                 <div class="frontend-block1">
-                                    <img src="images/logos/html.png" >
-                                    <img src="images/logos/css.png" >
+                                    <div>
+                                        <img src="images/logos/html.png" >
+                                    </div>
+                                    <div>
+                                        <img src="images/logos/css.png" >
+                                    </div>  
                                 </div>
                             </div>
                             <div class="frontend-block2">
-                                <h3>Framework</h3>
-                                <img src="images/logos/Bootstrap4.png" >
+                                <p>Framework</p>
+                                <div>
+                                    <img src="images/logos/Bootstrap4.png" >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -122,16 +142,16 @@
                 </div>
                 <div class="specifications">
                     <div class="spe-titre">
-                        <h1>Spécifications techniques</h1> 
+                        <h2>Spécifications techniques</h2> 
                         <img src="images/engrenage.png">
                     </div>
-                        <div class="backend">
+                        <div class="backend-p2">
                             <div >
-                                 <h3>Langage</h3>
+                                 <p>Langage</p>
                                  <img src="images/logos/java.png" >
                             </div>
                             <div >
-                                <h3>Framework</h3>
+                                <p>Framework</p>
                                 <img src="images/logos/spring.png" >
                             </div>
                         </div>
@@ -152,7 +172,7 @@
                </div>
                <div class="specifications">
                 <div class="spe-titre">
-                    <h1>Spécifications techniques</h1> 
+                    <h2>Spécifications techniques</h2> 
                     <img src="images/engrenage.png">
                 </div>
                 <div class="spe-parties">
@@ -160,16 +180,16 @@
                         <h2>Backend</h2>
                         <div class="backend">
                             <div >
-                                <h3>Langage</h3>
+                                <p>Langage</p>
                                 <img src="images/logos/java.png" >
                             </div>
                             <div class="backend-block1" >
-                                <h3>Base de données</h3>
+                                <p>Base de données</p>
                                 <img src="images/logos/mysql2.png" >
                                 <img src="images/logos/mongo.png" >
                             </div>
                             <div >
-                                <h3>Framework</h3>
+                                <p>Framework</p>
                                 <img src="images/logos/spring.png" >
                             </div>
                         </div>
@@ -178,15 +198,21 @@
                         <h2>Frontend</h2>
                         <div class="frontend">
                             <div >
-                                <h3>Langages</h3>
+                                <p>Langages</p>
                                 <div class="frontend-block1">
-                                    <img src="images/logos/html.png" >
-                                    <img src="images/logos/css.png" >
-                                    <img src="images/logos/javascript.png" >
+                                    <div>
+                                        <img src="images/logos/html.png" >
+                                    </div>
+                                    <div>
+                                        <img src="images/logos/css.png" >
+                                    </div>
+                                    <div>
+                                        <img src="images/logos/javascript.png" >
+                                    </div>
                                 </div>
                             </div>
                             <div class="frontend-block2">
-                                <h3>Framework</h3>
+                                <p>Framework</p>
                                 <img src="images/logos/Bootstrap4.png" >
                             </div>
                         </div>
@@ -195,7 +221,7 @@
             </section>
             <section class="section5">
                 <div class="technos">
-                    <h1>Mes technos</h1>
+                    <h1 id="technos">Mes technos</h1>
                     <div class="techno-table">
                         <div class="techno-back">
                             <div class="techno-backend">
@@ -204,15 +230,15 @@
                             </div>
                             <div class="techno-div">
                                 <div class="techno-block">
-                                    <h4>Langage principal</h4>
+                                    <p>Langage principal</p>
                                     <img src="images/logos/java.png">
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Framework</h4>
+                                    <p>Framework</p>
                                     <img src="images/logos/spring2.png">
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Bases de données</h4>
+                                    <p>Bases de données</p>
                                     <div class="techno-block-div">
                                         <div>
                                             <img src="images/logos/mysql2.png">
@@ -223,7 +249,7 @@
                                     </div>
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Outils de versionnage</h4>
+                                    <p>Outils de versionnage</p>
                                     <div class="techno-block-div">
                                         <div>
                                             <img src="images/logos/github.png">
@@ -234,11 +260,11 @@
                                     </div>
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Conteneurs</h4>
+                                    <p>Conteneurs</p>
                                     <img src="images/logos/docker-logo2.png">
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Constructeurs de projets</h4>
+                                    <p>Constructeurs de projets</p>
                                     <div class="techno-block-div">
                                         <div>
                                             <img src="images/logos/Maven.png">
@@ -249,12 +275,12 @@
                                     </div>
                                 </div>
                                 <div class="techno-block">
-                                    <h4>IDE</h4>
+                                    <p>IDE</p>
                                     <img src="images/logos/IntelliJ.png">
                                 </div>
                             </div>   
                         </div>
-                    
+            
                         <div  class="techno-front">
                             <div class="techno-frontend"> 
                                 <h2>FRONTEND</h2>
@@ -262,7 +288,7 @@
                             </div>
                             <div class="techno-div">
                                 <div class="techno-block">
-                                    <h4>Langages</h4>
+                                    <p>Langages</p>
                                     <div class="techno-block-div">
                                         <div>
                                             <img src="images/logos/html.png">
@@ -276,11 +302,11 @@
                                     </div>
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Framework</h4>
+                                    <p>Framework</p>
                                     <img src="images/logos/Bootstrap4.png">
                                 </div>
                                 <div class="techno-block">
-                                    <h4>Moteur de templates</h4>
+                                    <p>Moteur de templates</p>
                                     <img src="images/logos/thymeleaf.png">
                                 </div>
                             </div>   
