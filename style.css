@@ -555,7 +555,7 @@ header h2{
 }
 
 .reseaux-block{
-    margin-top: 8%;
+    margin-top: 10%;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
@@ -925,7 +925,7 @@ header h2{
     }
 
     .reseaux-block{
-        margin-top: 25%;
+        margin-top: 20%;
     }
 
     .reseaux-block img{
