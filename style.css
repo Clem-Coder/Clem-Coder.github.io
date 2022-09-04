@@ -539,7 +539,7 @@ header h2{
 
 
 
-.contact-phone-img img{
+.contact-phone img{
     max-width: 100%;
 }
 
@@ -555,14 +555,14 @@ header h2{
 }
 
 .reseaux-block{
-    margin-top: 10%;
+    margin-top: 8%;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
 
 .reseaux-block img{
-    max-width: 40%;
+    max-width: 35%;
 }
 
 .reseaux-block:hover{
