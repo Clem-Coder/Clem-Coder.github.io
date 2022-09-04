@@ -18,7 +18,8 @@ body h2{
 }
 
 
-body p{
+body p, body input, body textarea, button{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.8em;
 }
 
@@ -52,7 +53,7 @@ body a{
     animation-fill-mode:forwards;
 }
 
-.parcours h1, .projets h1, .technos h1 {
+.parcours h1, .projets h1, .technos h1, .contact h1 {
     margin-top: 10%;
     text-decoration: underline;
 }
@@ -132,7 +133,7 @@ header h2{
 }
 
 .section6{
-    background: linear-gradient( rgb(2, 117, 199), rgb(255, 255, 255)) ;
+    background: linear-gradient( rgb(2, 117, 199), rgb(76, 107, 163)) ;
 }
 
 .section2, .section3, .section4, .section5, .section6 {
@@ -297,11 +298,11 @@ header h2{
 }
 
 .frontend-block1 img{
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .frontend-block2 img{
-    max-width: 30%;
+    max-width: 50%;
 }
 
 
@@ -453,6 +454,125 @@ header h2{
     max-width: 80%;
 }
 
+/**CONTACT**/
+
+.contact{
+    width: 50%;
+    margin: auto;
+}
+
+.contact-email{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.contact-email-img{
+    max-width: 30%;
+}
+
+.contact-email img{
+    max-width: 80%;
+}
+
+.contact-email-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-email-email a{
+    font-size: 1.8em;
+}
+
+.contact-email-email img {
+    margin-right: 1%;
+    max-width: 10%;
+}
+
+
+.contact-email-form input, .contact-email-form textarea{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    outline: none;
+    padding: .5rem 1.5rem;
+    width: 80%;
+    transition: background-color 500ms;
+}
+
+.contact-email-form input:focus, .contact-email-form textarea:focus{
+    border: 2px solid blueviolet;
+}
+
+.contact-email-form input:not(:focus):invalid {
+    background-color: red;
+    color: white;
+}
+
+
+.contact-email-form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.contact-email-form button{
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.contact-email-form input, .contact-email-form textarea, .contact-email-form button{
+    margin-top: 5%;
+}
+
+
+.contact-phone-networks{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+
+.contact-phone {
+    display: flex;
+    align-items: center;
+}
+
+.contact-phone-img{
+    max-width: 30%;
+}
+
+.contact-phone-img img{
+    max-width: 100%;
+}
+
+
+.reseaux {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.reseaux-block{
+    margin-top: 10%;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+
+.reseaux-block img{
+    max-width: 40%;
+}
+
+.reseaux-block:hover{
+    transform: scale(1.15);
+}
+
+
 
 
 /*REVEAL*/
@@ -554,7 +674,7 @@ header h2{
 
 /**SMARTPHONE**/
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     html {
         font-size: 15px;
     }
@@ -574,7 +694,6 @@ header h2{
     }
 
     
-
     .loading-picture{
         position: relative;
         animation-name: charging-tel;
@@ -745,10 +864,60 @@ header h2{
     }
 
     .techno-div{
+        align-items:flex-start;
+        justify-content: space-around; 
+    }
+
+    .techno-block{
+        margin-bottom: 5%;
+        width:50%;
+    }
+    
+    .techno-block img{
+        max-width:40%;
+    }
+
+    .techno-block-div{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .techno-block-div img{
+        max-width: 50%;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        width: 95%;
+        margin: auto;
+    }
+
+    .contact-email{
+        flex-direction: column;
+    }
+
+    .contact-email-img{
+        margin-bottom: 5%;
+    }
+
+    .contact-phone {
+        width: 95%;
+        flex-direction: column;
         align-items: center;
     }
 
+    .contact-phone-img{
+        max-width: 50%;
+    }
 
+    .reseaux-block{
+        margin-top: 38%;
+    }
+
+    .reseaux-block img{
+        max-width: 70%;
+    }
 
     /*REVEAL*/
 
