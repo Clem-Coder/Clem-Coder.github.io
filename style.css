@@ -532,28 +532,25 @@ header h2{
 
 .contact-phone-networks{
     display: flex;
-    justify-content: center;
-    padding-bottom: 15%;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 10%;
 }
 
-.contact-phone {
-    display: flex;
-    align-items: center;
-}
 
-.contact-phone-img{
-    max-width: 30%;
-}
 
 .contact-phone-img img{
     max-width: 100%;
 }
 
 
+.contact-networks, .contact-phone{
+    width: 30%;
+}
+
 .reseaux {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center; 
 }
 
@@ -570,6 +567,15 @@ header h2{
 
 .reseaux-block:hover{
     transform: scale(1.15);
+}
+
+.contact-picture{
+    width: 40%;
+    text-align: center;
+}
+
+.contact-picture img{
+    max-width: 100%;
 }
 
 
@@ -901,22 +907,33 @@ header h2{
         margin-bottom: 5%;
     }
 
+    .contact-phone-networks{
+        justify-content: space-between;
+    }
+
     .contact-phone {
-        width: 95%;
         flex-direction: column;
         align-items: center;
     }
 
     .contact-phone-img{
-        max-width: 50%;
+        max-width: 40%;
+    }
+
+    .contact-networks, .contact-phone{
+        width: 40%;
     }
 
     .reseaux-block{
-        margin-top: 38%;
+        margin-top: 25%;
     }
 
     .reseaux-block img{
         max-width: 70%;
+    }
+
+    .contact-picture{
+        display: none;
     }
 
     /*REVEAL*/
