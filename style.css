@@ -909,6 +909,7 @@ header h2{
 
     .contact-phone-networks{
         justify-content: space-between;
+        align-items: flex-start
     }
 
     .contact-phone {
@@ -925,11 +926,11 @@ header h2{
     }
 
     .reseaux-block{
-        margin-top: 20%;
+        margin-top: 15%;
     }
 
     .reseaux-block img{
-        max-width: 70%;
+        max-width: 50%;
     }
 
     .contact-picture{
