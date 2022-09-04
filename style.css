@@ -534,13 +534,24 @@ header h2{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 
 
-.contact-phone img{
-    max-width: 100%;
+.contact-phone-bg{
+    background-image: url(images/logos/smartphone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 5%;
+    height: 35vh;
+    line-height: 35vh;
+}
+
+.contact-phone-bg p{
+    font-weight: bold;
+    color:rgb(158, 113, 170) ;
 }
 
 
