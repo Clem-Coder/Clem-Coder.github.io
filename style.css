@@ -680,7 +680,7 @@ header h2{
 
 /**SMARTPHONE**/
 
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
     html {
         font-size: 15px;
     }
