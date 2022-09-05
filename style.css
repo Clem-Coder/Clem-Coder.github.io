@@ -1,6 +1,10 @@
 
 *{margin: 0; padding: 0;}
 
+html{
+    font-size: 15px;
+}
+
 body{
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
@@ -256,7 +260,6 @@ header h2{
 
 .backend{
     display: flex;
-    align-items: flex-start;
     justify-content: space-around;
 }
 
@@ -274,7 +277,11 @@ header h2{
     max-width: 50%;
 }
 
-
+.backend-block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .front{
@@ -640,224 +647,30 @@ header h2{
 
 
 
+
+
+
+
+
+/******FONT FAMILY *******/
+
+@font-face {
+    font-family: 'AlexBrush-Regular';
+    src: url('font/AlexBrush-Regular.ttf') format('truetype');
+}
+
+
+
 /******* KEYFRAMES ******/
 
 
-@media (max-width: 1024px) {
-
-    html {
-        font-size: 15px;
-    }
-
-    body h1{
-        font-size: 5em;
-        margin-bottom: 5%;
-    }
-
-    body h2{
-        font-size: 2.5em;
-    }
-
-
-    body p{
-        font-size: 1.8em;
-    }
-
-
-    .loading-picture{
-        position: relative;
-        animation-name: charging-tab;
-        animation-duration: 3.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    .loading-picture img{
-        max-width: 40%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .projets, .projets2, .projets3 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .parcours h1, .projets h1{
-        text-align: center;
-    }
-
-    /*MENU*/
-
-    header img{
-        max-width: 40%;
-    }
-
-    .menu {
-        margin: auto;
-        max-width: 95%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center; 
-    }
-
-    .menu-block{
-        border: 1px white solid;
-        border-radius: 10px;
-        padding: 1%;
-        margin: 1%;
-        max-width: 20%;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 400ms;
-    }
-
-    .menu-block:hover{
-        transform: scale(1);
-    }
-
-    /*PARCOURS*/
-
-
-    .parcours{
-        width: 90%;
-        margin: auto;
-        text-align: justify;
-        color:white;
-    }
-
-
-
-
-    .etape1 p,.etape2 p,.etape3 p{
-        max-width: 60%; 
-        margin-bottom: 5%;
-        margin-top: 3%;
-    }
-
-    .etape2-img img{
-        max-width: 60%;
-    }
-
-    .etape3-img{
-        max-width: 100%; 
-    }
-
-    .etape3-img img{
-        max-width: 60%;
-    }
-
-    /*SPECIFICATIONS*/
-
-    .specifications{
-        width: 95%;
-        border: 2px solid black;
-    }
-
-    .spe-titre img{
-        max-width: 6%;
-    }
-
-    .spe-parties h2{
-        font-size: 1.8em;
-    }
-
-    .specifications p{
-        margin-bottom: 5%;
-        margin-top: 10%;
-        text-decoration: underline;
-    }
-    
-
-    .backend img{
-        max-width: 50%;
-    }
-
-    .backend-block1 img{
-        max-width: 25%;
-    }
-
-
-
-    /*PROJETS*/
-
-    /* P1 */
-
-    .projets p{
-        text-align: center;
-    }
-
-    /*TECHNOS*/
-
-    .technos{
-        width: 95%;
-        margin: auto;
-    }
-
-    .techno-table{
-        border: 2px solid black;
-    }
-
-    .techno-back, .techno-front{
-        justify-content: space-between;
-        padding: 3% 3% 3% 0%;
-    }
-
-    .techno-back{
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-    }
-
-    .techno-front{
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-
-
-    .techno-block-div img{
-        max-width: 80%;
-    }
-
-    /*CONTACT*/
-
-    .contact{
-        width: 80%;
-        margin: auto;
-    }
-
-
-
-    .contact-phone-networks{
-        justify-content: space-around;
-    }
-
-
-
-    .reseaux-block{
-        margin-top: 10%;
-    }
-
-    .reseaux-block img{
-        max-width: 50%;
-    }
-
-
-    /*REVEAL*/
-
-    .reveal{
-    margin-top: 10%;
-    }
-}
 
 
 
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(12vh);}
+    100% {transform: translateY(10vh);}
 }
 
 @keyframes charging-computer{
@@ -866,10 +679,10 @@ header h2{
     100% {transform: translateY(16vh);}
 }
 
-@keyframes charging-tab{
+@keyframes charging-medium-screen{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(18vh);}
+    100% {transform: translateY(17vh);}
 }
 
 @keyframes contents{
@@ -908,9 +721,9 @@ header h2{
 
 /**SMARTPHONE**/
 
-@media (max-width: 765px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
     html {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     body h1{
@@ -1160,14 +973,487 @@ header h2{
     .reveal{
     margin-top: 10%;
     }
-
-
-
 }
 
-/**TABLETS**/
+
+/**TABLET**/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+
+    body h1{
+        font-size: 4em;
+        margin-bottom: 5%;
+    }
+    
+    body h2{
+        font-size: 2em;
+    }
+    
+    
+    body p{
+        font-size: 1.6em;
+    }
+
+    
+    .loading-picture{
+        position: relative;
+        animation-name: charging-computer;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    .loading-picture img{
+        max-width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .projets, .projets2, .projets3 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .parcours h1, .projets h1{
+        text-align: center;
+    }
+
+    /*MENU*/
+
+    header img{
+        max-width: 30%;
+    }
+
+    .menu {
+        margin: auto;
+        max-width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; 
+    }
+
+    .menu-block{
+        border: 2px white solid;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        max-width: 45%;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+    }
+
+    .menu-block:hover{
+        transform: scale(1);
+    }
+
+    /*PARCOURS*/
 
 
- 
+    .parcours{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+        color:white;
+    }
+
+    .etape1 ,.etape2 ,.etape3{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .etape1, .etape3  {
+        flex-direction: column-reverse;
+    }
+
+    .etape1 p,.etape2 p,.etape3 p{
+        max-width: 95%; 
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+
+    .etape1 .commercial-dev{
+        max-width: 50%;
+    }
+
+    .etape2-img img{
+        max-width: 50%;
+    }
+
+    .etape3-img{
+        max-width: 100%; 
+    }
+
+    .etape3-img img{
+        max-width: 50%;
+    }
+
+    /*SPECIFICATIONS*/
+
+    .specifications{
+        width: 92%;
+        border: 2px solid black;
+    }
+
+    .spe-titre img{
+        max-width: 6%;
+    }
+
+    .spe-parties h2{
+        font-size: 1.8em;
+    }
+
+    .specifications p{
+        margin-bottom: 5%;
+        margin-top: 10%;
+        text-decoration: underline;
+    }
+
+    .backend, .frontend{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .backend img{
+        max-width: 30%;
+    }
+
+    
+
+    /*PROJETS*/
+
+    /* P1 */
+
+    .projets p{
+        text-align: center;
+    }
+
+    /*TECHNOS*/
+
+    .technos{
+        width: 95%;
+        margin: auto;
+    }
+
+    .techno-table{
+        border: 2px solid black;
+    }
+
+    .techno-back, .techno-front{
+        justify-content: space-between;
+        padding: 3% 3% 3% 0%;
+    }
+
+    .techno-back{
+        margin-bottom: 0.5%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .techno-front{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .techno-backend img ,.techno-frontend img{
+        width: 80%;
+    }
+
+    .techno-div{
+        align-items:flex-start;
+        justify-content: space-around; 
+    }
+
+    .techno-block{
+        margin-bottom: 5%;
+        width:33%;
+    }
+    
+    .techno-block img{
+        max-width:40%;
+    }
+
+    .techno-block-div{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .techno-block-div img{
+        max-width: 50%;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        width: 85%;
+        margin: auto;
+    }
+
+
+
+    .contact-phone-networks{
+        justify-content: space-around;
+    }
+
+    .reseaux-block{
+        margin-top: 10%;
+    }
+
+    .reseaux-block img{
+        max-width: 50%;
+    }
+
+
+    /*REVEAL*/
+
+    .reveal{
+    margin-top: 10%;
+    }
+}
+
+
+/**MEDIUM SCREEN**/
+
+@media screen and (min-width: 1024px) and (max-width: 1660px) {
+    html {
+        font-size: 14px;
+    }
+
+    body h1{
+        font-size: 4em;
+        margin-bottom: 5%;
+    }
+    
+    body h2{
+        font-size: 2em;
+    }
+    
+    
+    body p{
+        font-size: 1.6em;
+    }
+
+    
+    .loading-picture{
+        position: relative;
+        animation-name: charging-computer;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    .loading-picture img{
+        max-width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .projets, .projets2, .projets3 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .parcours h1, .projets h1{
+        text-align: center;
+    }
+
+    /*MENU*/
+
+    header img{
+        max-width: 20%;
+    }
+
+    .menu {
+        margin: auto;
+        max-width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; 
+    }
+
+    .menu-block{
+        border: 2px white solid;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        max-width: 20%;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+    }
+
+    .menu-block:hover{
+        transform: scale(1);
+    }
+
+    /*PARCOURS*/
+
+
+    .parcours{
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+        color:white;
+    }
+
+
+
+    .etape1 p,.etape2 p,.etape3 p{
+        max-width: 50%; 
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+
+    .etape1 .commercial-dev{
+        max-width: 40%;
+    }
+
+    .etape2-img img{
+        max-width: 60%;
+    }
+
+    .etape3-img{
+        max-width: 100%; 
+    }
+
+    .etape3-img img{
+        max-width: 60%;
+    }
+
+    /*SPECIFICATIONS*/
+
+    .specifications{
+        width: 90%;
+        border: 2px solid black;
+    }
+
+    .spe-titre img{
+        max-width: 5%;
+    }
+
+    .spe-parties h2{
+        font-size: 1.8em;
+    }
+
+    .specifications p{
+        margin-bottom: 5%;
+        margin-top: 10%;
+        text-decoration: underline;
+    }
+
+    .backend, .frontend{
+        justify-content: space-around;
+    }
+
+    .backend img{
+        max-width: 50%;
+    }
+
+    
+
+    /*PROJETS*/
+
+    /* P1 */
+
+    .projets p{
+        text-align: center;
+    }
+
+    /*TECHNOS*/
+
+    .technos{
+        width: 95%;
+        margin: auto;
+    }
+
+    .techno-table{
+        border: 2px solid black;
+    }
+
+    .techno-back, .techno-front{
+        justify-content: space-between;
+        padding: 3% 3% 3% 0%;
+    }
+
+    .techno-back{
+        margin-bottom: 0.5%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .techno-front{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .techno-backend img ,.techno-frontend img{
+        width: 80%;
+    }
+
+    .techno-div{
+        align-items:flex-start;
+        justify-content: space-around; 
+    }
+
+    .techno-block{
+        margin-bottom: 5%;
+        width:33%;
+    }
+    
+    .techno-block img{
+        max-width:40%;
+    }
+
+    .techno-block-div{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .techno-block-div img{
+        max-width: 50%;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        width: 85%;
+        margin: auto;
+    }
+
+
+
+    .contact-phone-networks{
+        justify-content: space-around;
+    }
+
+    .reseaux-block{
+        margin-top: 10%;
+    }
+
+    .reseaux-block img{
+        max-width: 80%;
+    }
+
+
+    /*REVEAL*/
+
+    .reveal{
+    margin-top: 10%;
+    }
+}
+
+
  
 
