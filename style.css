@@ -2,7 +2,7 @@
 *{margin: 0; padding: 0;}
 
 html{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body{
@@ -670,7 +670,7 @@ header h2{
 @keyframes charging-tel{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(10vh);}
+    100% {transform: translateY(12vh);}
 }
 
 @keyframes charging-computer{
