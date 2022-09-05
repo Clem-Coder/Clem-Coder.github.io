@@ -721,7 +721,7 @@ header h2{
 
 /**SMARTPHONE**/
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
     html {
         font-size: 11px;
     }
@@ -979,7 +979,7 @@ header h2{
 
 /**MEDIUM SCREEN**/
 
-@media screen and (min-width: 768px) and (max-width: 1660px) {
+@media screen and (min-width: 701px) and (max-width: 1660px) {
     html {
         font-size: 13px;
     }
