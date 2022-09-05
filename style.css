@@ -647,24 +647,7 @@ header h2{
 
 
 
-
-
-
-
-
-/******FONT FAMILY *******/
-
-@font-face {
-    font-family: 'AlexBrush-Regular';
-    src: url('font/AlexBrush-Regular.ttf') format('truetype');
-}
-
-
-
 /******* KEYFRAMES ******/
-
-
-
 
 
 @keyframes charging-tel{
@@ -949,19 +932,17 @@ header h2{
     }
 
     .contact-phone-networks{
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
-    .contact-phone{
-        width: 100%;
-    }
+
 
     .reseaux-block{
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .reseaux-block img{
-        max-width: 50%;
+        max-width: 40%;
     }
 
     .contact-picture{
@@ -1189,11 +1170,9 @@ header h2{
     }
 
 
-
     .contact-phone-networks{
         justify-content: space-around;
     }
-
 
 
     .reseaux-block{
