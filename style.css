@@ -512,6 +512,11 @@ header h2{
     color: white;
 }
 
+.contact-email-form p{
+    font-weight: bold;
+    color: rgb(121, 223, 121);
+}
+
 
 .contact-email-form textarea{
     height: 150px;
@@ -525,7 +530,7 @@ header h2{
     color: white;
 }
 
-.contact-email-form input, .contact-email-form textarea, .contact-email-form button{
+.contact-email-form input, .contact-email-form textarea, .contact-email-form button, .contact-email-form p{
     margin-top: 5%;
 }
 
@@ -533,21 +538,27 @@ header h2{
 .contact-phone-networks{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
     padding-bottom: 5%;
 }
 
-
-
-.contact-phone-bg{
+.contact-phone{
     background-image: url(images/logos/smartphone.png);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size:contain;
-    padding: 5%;
-    height: 35vh;
-    line-height: 35vh;
+    width: 30%;
 }
+
+.contact-phone-bg{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    line-height: 100%;
+
+  }
+   
 
 .contact-phone-bg p{
     font-weight: bold;
@@ -555,25 +566,36 @@ header h2{
 }
 
 
-.contact-networks, .contact-phone{
-    width: 30%;
+.contact-picture{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-phone h2, .contact-networks h2 {
+    margin-bottom: 10%;
 }
 
 .reseaux {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    
 }
 
 .reseaux-block{
-    margin-top: 10%;
+    margin-top: 5%;
+    max-height: 100%;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 400ms;
 }
 
 .reseaux-block img{
-    max-width: 35%;
+    max-width: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
 .reseaux-block:hover{
@@ -920,24 +942,16 @@ header h2{
 
     .contact-phone-networks{
         justify-content: space-between;
-        align-items: flex-start
     }
 
-    .contact-phone {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .contact-phone-img{
-        max-width: 40%;
-    }
 
     .contact-networks, .contact-phone{
-        width: 40%;
+        width: 45%;
     }
 
     .reseaux-block{
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .reseaux-block img{
