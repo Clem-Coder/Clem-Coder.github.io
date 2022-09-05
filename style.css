@@ -944,10 +944,8 @@ header h2{
         justify-content: space-between;
     }
 
-
-
-    .contact-networks, .contact-phone{
-        width: 45%;
+    .contact-phone{
+        width: 100%;
     }
 
     .reseaux-block{
