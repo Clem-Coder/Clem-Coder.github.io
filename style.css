@@ -461,6 +461,7 @@ header h2{
     margin: auto;
 }
 
+
 .contact-email{
     display: flex;
     justify-content: space-around;
@@ -550,20 +551,17 @@ header h2{
 }
 
 .contact-phone-bg{
+    font-size: 0.8em;
+    font-weight: bold;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     line-height: 100%;
-
   }
    
 
-.contact-phone-bg p{
-    font-weight: bold;
-    color:rgb(158, 113, 170) ;
-}
 
 
 .contact-picture{
