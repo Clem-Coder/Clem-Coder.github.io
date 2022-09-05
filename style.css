@@ -640,23 +640,217 @@ header h2{
 
 
 
-
-
-
-
-
-/******FONT FAMILY *******/
-
-@font-face {
-    font-family: 'AlexBrush-Regular';
-    src: url('font/AlexBrush-Regular.ttf') format('truetype');
-}
-
-
-
 /******* KEYFRAMES ******/
 
 
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    body h1{
+        font-size: 5em;
+        margin-bottom: 5%;
+    }
+
+    body h2{
+        font-size: 2.5em;
+    }
+
+
+    body p{
+        font-size: 1.8em;
+    }
+
+
+    .loading-picture{
+        position: relative;
+        animation-name: charging-tab;
+        animation-duration: 3.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .loading-picture img{
+        max-width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .projets, .projets2, .projets3 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .parcours h1, .projets h1{
+        text-align: center;
+    }
+
+    /*MENU*/
+
+    header img{
+        max-width: 40%;
+    }
+
+    .menu {
+        margin: auto;
+        max-width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; 
+    }
+
+    .menu-block{
+        border: 1px white solid;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        max-width: 20%;
+        transform: scale(1);
+        transition-property: transform;
+        transition-duration: 400ms;
+    }
+
+    .menu-block:hover{
+        transform: scale(1);
+    }
+
+    /*PARCOURS*/
+
+
+    .parcours{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+        color:white;
+    }
+
+
+
+
+    .etape1 p,.etape2 p,.etape3 p{
+        max-width: 60%; 
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+
+    .etape2-img img{
+        max-width: 60%;
+    }
+
+    .etape3-img{
+        max-width: 100%; 
+    }
+
+    .etape3-img img{
+        max-width: 60%;
+    }
+
+    /*SPECIFICATIONS*/
+
+    .specifications{
+        width: 95%;
+        border: 2px solid black;
+    }
+
+    .spe-titre img{
+        max-width: 6%;
+    }
+
+    .spe-parties h2{
+        font-size: 1.8em;
+    }
+
+    .specifications p{
+        margin-bottom: 5%;
+        margin-top: 10%;
+        text-decoration: underline;
+    }
+    
+
+    .backend img{
+        max-width: 50%;
+    }
+
+    .backend-block1 img{
+        max-width: 25%;
+    }
+
+
+
+    /*PROJETS*/
+
+    /* P1 */
+
+    .projets p{
+        text-align: center;
+    }
+
+    /*TECHNOS*/
+
+    .technos{
+        width: 95%;
+        margin: auto;
+    }
+
+    .techno-table{
+        border: 2px solid black;
+    }
+
+    .techno-back, .techno-front{
+        justify-content: space-between;
+        padding: 3% 3% 3% 0%;
+    }
+
+    .techno-back{
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+
+    .techno-front{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+
+    .techno-block-div img{
+        max-width: 80%;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+    .contact-phone-networks{
+        justify-content: space-around;
+    }
+
+
+
+    .reseaux-block{
+        margin-top: 10%;
+    }
+
+    .reseaux-block img{
+        max-width: 50%;
+    }
+
+
+    /*REVEAL*/
+
+    .reveal{
+    margin-top: 10%;
+    }
+}
 
 
 
@@ -973,214 +1167,7 @@ header h2{
 
 /**TABLETS**/
 
-@media (max-width: 1024px) {
 
-    html {
-        font-size: 15px;
-    }
-
-    body h1{
-        font-size: 5em;
-        margin-bottom: 5%;
-    }
-
-    body h2{
-        font-size: 2.5em;
-    }
-
-
-    body p{
-        font-size: 1.8em;
-    }
-
-
-    .loading-picture{
-        position: relative;
-        animation-name: charging-tab;
-        animation-duration: 3.5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    .loading-picture img{
-        max-width: 40%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .projets, .projets2, .projets3 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .parcours h1, .projets h1{
-        text-align: center;
-    }
-
-    /*MENU*/
-
-    header img{
-        max-width: 40%;
-    }
-
-    .menu {
-        margin: auto;
-        max-width: 95%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center; 
-    }
-
-    .menu-block{
-        border: 1px white solid;
-        border-radius: 10px;
-        padding: 1%;
-        margin: 1%;
-        max-width: 20%;
-        transform: scale(1);
-        transition-property: transform;
-        transition-duration: 400ms;
-    }
-
-    .menu-block:hover{
-        transform: scale(1);
-    }
-
-    /*PARCOURS*/
-
-
-    .parcours{
-        width: 90%;
-        margin: auto;
-        text-align: justify;
-        color:white;
-    }
-
-
-
-
-    .etape1 p,.etape2 p,.etape3 p{
-        max-width: 60%; 
-        margin-bottom: 5%;
-        margin-top: 3%;
-    }
-
-    .etape2-img img{
-        max-width: 60%;
-    }
-
-    .etape3-img{
-        max-width: 100%; 
-    }
-
-    .etape3-img img{
-        max-width: 60%;
-    }
-
-    /*SPECIFICATIONS*/
-
-    .specifications{
-        width: 95%;
-        border: 2px solid black;
-    }
-
-    .spe-titre img{
-        max-width: 6%;
-    }
-
-    .spe-parties h2{
-        font-size: 1.8em;
-    }
-
-    .specifications p{
-        margin-bottom: 5%;
-        margin-top: 10%;
-        text-decoration: underline;
-    }
-    
-
-    .backend img{
-        max-width: 50%;
-    }
-
-    .backend-block1 img{
-        max-width: 25%;
-    }
-
-
-
-    /*PROJETS*/
-
-    /* P1 */
-
-    .projets p{
-        text-align: center;
-    }
-
-    /*TECHNOS*/
-
-    .technos{
-        width: 95%;
-        margin: auto;
-    }
-
-    .techno-table{
-        border: 2px solid black;
-    }
-
-    .techno-back, .techno-front{
-        justify-content: space-between;
-        padding: 3% 3% 3% 0%;
-    }
-
-    .techno-back{
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-    }
-
-    .techno-front{
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-
-
-    .techno-block-div img{
-        max-width: 80%;
-    }
-
-    /*CONTACT*/
-
-    .contact{
-        width: 80%;
-        margin: auto;
-    }
-
-
-
-    .contact-phone-networks{
-        justify-content: space-around;
-    }
-
-
-
-    .reseaux-block{
-        margin-top: 10%;
-    }
-
-    .reseaux-block img{
-        max-width: 50%;
-    }
-
-
-    /*REVEAL*/
-
-    .reveal{
-    margin-top: 10%;
-    }
-}
  
  
 
