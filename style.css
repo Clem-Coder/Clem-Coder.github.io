@@ -587,7 +587,7 @@ header h2{
 }
 
 .reseaux-block{
-    margin-top: 5%;
+    margin-top: 15%;
     max-height: 100%;
     transform: scale(1);
     transition-property: transform;
@@ -659,7 +659,7 @@ header h2{
 @keyframes charging-computer{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(16vh);}
+    100% {transform: translateY(13vh);}
 }
 
 @keyframes charging-medium-screen{
@@ -960,7 +960,7 @@ header h2{
 
 /**MEDIUM SCREEN**/
 
-@media screen and (min-width: 701px) and (max-width: 1660px) {
+@media screen and (min-width: 701px) and (max-width: 1450px) {
     html {
         font-size: 13px;
     }
