@@ -659,7 +659,7 @@ header h2{
 @keyframes charging-computer{
     0% { transform: translateY(50vh)}
     50% { transform: translateY(50vh)}
-    100% {transform: translateY(13vh);}
+    100% {transform: translateY(15vh);}
 }
 
 @keyframes charging-medium-screen{
