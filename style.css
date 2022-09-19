@@ -512,10 +512,7 @@ header h2{
     border: 2px solid blueviolet;
 }
 
-.contact-email-form input:not(:focus):invalid {
-    background-color: red;
-    color: white;
-}
+
 
 .contact-email-form p{
     font-weight: bold;
